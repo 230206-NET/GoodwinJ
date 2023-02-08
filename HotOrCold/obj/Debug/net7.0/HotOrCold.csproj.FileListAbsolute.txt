@@ -1,0 +1,15 @@
+C:\Revature\GoodwinJ\HotOrCold\bin\Debug\net7.0\HotOrCold.exe
+C:\Revature\GoodwinJ\HotOrCold\bin\Debug\net7.0\HotOrCold.deps.json
+C:\Revature\GoodwinJ\HotOrCold\bin\Debug\net7.0\HotOrCold.runtimeconfig.json
+C:\Revature\GoodwinJ\HotOrCold\bin\Debug\net7.0\HotOrCold.dll
+C:\Revature\GoodwinJ\HotOrCold\bin\Debug\net7.0\HotOrCold.pdb
+C:\Revature\GoodwinJ\HotOrCold\obj\Debug\net7.0\HotOrCold.csproj.AssemblyReference.cache
+C:\Revature\GoodwinJ\HotOrCold\obj\Debug\net7.0\HotOrCold.GeneratedMSBuildEditorConfig.editorconfig
+C:\Revature\GoodwinJ\HotOrCold\obj\Debug\net7.0\HotOrCold.AssemblyInfoInputs.cache
+C:\Revature\GoodwinJ\HotOrCold\obj\Debug\net7.0\HotOrCold.AssemblyInfo.cs
+C:\Revature\GoodwinJ\HotOrCold\obj\Debug\net7.0\HotOrCold.csproj.CoreCompileInputs.cache
+C:\Revature\GoodwinJ\HotOrCold\obj\Debug\net7.0\HotOrCold.dll
+C:\Revature\GoodwinJ\HotOrCold\obj\Debug\net7.0\refint\HotOrCold.dll
+C:\Revature\GoodwinJ\HotOrCold\obj\Debug\net7.0\HotOrCold.pdb
+C:\Revature\GoodwinJ\HotOrCold\obj\Debug\net7.0\HotOrCold.genruntimeconfig.cache
+C:\Revature\GoodwinJ\HotOrCold\obj\Debug\net7.0\ref\HotOrCold.dll
