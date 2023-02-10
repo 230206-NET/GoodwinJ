@@ -1,0 +1,15 @@
+C:\Revature\GoodwinJ\Hangman\bin\Debug\net7.0\Hangman.exe
+C:\Revature\GoodwinJ\Hangman\bin\Debug\net7.0\Hangman.deps.json
+C:\Revature\GoodwinJ\Hangman\bin\Debug\net7.0\Hangman.runtimeconfig.json
+C:\Revature\GoodwinJ\Hangman\bin\Debug\net7.0\Hangman.dll
+C:\Revature\GoodwinJ\Hangman\bin\Debug\net7.0\Hangman.pdb
+C:\Revature\GoodwinJ\Hangman\obj\Debug\net7.0\Hangman.csproj.AssemblyReference.cache
+C:\Revature\GoodwinJ\Hangman\obj\Debug\net7.0\Hangman.GeneratedMSBuildEditorConfig.editorconfig
+C:\Revature\GoodwinJ\Hangman\obj\Debug\net7.0\Hangman.AssemblyInfoInputs.cache
+C:\Revature\GoodwinJ\Hangman\obj\Debug\net7.0\Hangman.AssemblyInfo.cs
+C:\Revature\GoodwinJ\Hangman\obj\Debug\net7.0\Hangman.csproj.CoreCompileInputs.cache
+C:\Revature\GoodwinJ\Hangman\obj\Debug\net7.0\Hangman.dll
+C:\Revature\GoodwinJ\Hangman\obj\Debug\net7.0\refint\Hangman.dll
+C:\Revature\GoodwinJ\Hangman\obj\Debug\net7.0\Hangman.pdb
+C:\Revature\GoodwinJ\Hangman\obj\Debug\net7.0\Hangman.genruntimeconfig.cache
+C:\Revature\GoodwinJ\Hangman\obj\Debug\net7.0\ref\Hangman.dll
