@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "WeekOnePortfolio/1.0.0": {
+        "dependencies": {
+          "FizzBuzz": "1.0.0",
+          "firstDotnet": "1.0.0"
+        },
+        "runtime": {
+          "WeekOnePortfolio.dll": {}
+        }
+      },
+      "firstDotnet/1.0.0": {
+        "runtime": {
+          "firstDotnet.dll": {}
+        }
+      },
+      "FizzBuzz/1.0.0": {
+        "runtime": {
+          "FizzBuzz.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WeekOnePortfolio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "firstDotnet/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FizzBuzz/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

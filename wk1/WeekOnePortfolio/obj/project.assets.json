@@ -1,0 +1,108 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "firstDotnet/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/firstDotnet.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/firstDotnet.dll": {}
+        }
+      },
+      "FizzBuzz/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/FizzBuzz.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FizzBuzz.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "firstDotnet/1.0.0": {
+      "type": "project",
+      "path": "../firstDotnet/firstDotnet.csproj",
+      "msbuildProject": "../firstDotnet/firstDotnet.csproj"
+    },
+    "FizzBuzz/1.0.0": {
+      "type": "project",
+      "path": "../FizzBuzz/FizzBuzz.csproj",
+      "msbuildProject": "../FizzBuzz/FizzBuzz.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "FizzBuzz >= 1.0.0",
+      "firstDotnet >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\jacob\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Revature\\GoodwinJ\\wk1\\WeekOnePortfolio\\WeekOnePortfolio.csproj",
+      "projectName": "WeekOnePortfolio",
+      "projectPath": "C:\\Revature\\GoodwinJ\\wk1\\WeekOnePortfolio\\WeekOnePortfolio.csproj",
+      "packagesPath": "C:\\Users\\jacob\\.nuget\\packages\\",
+      "outputPath": "C:\\Revature\\GoodwinJ\\wk1\\WeekOnePortfolio\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\jacob\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "C:\\Revature\\GoodwinJ\\wk1\\firstDotnet\\firstDotnet.csproj": {
+              "projectPath": "C:\\Revature\\GoodwinJ\\wk1\\firstDotnet\\firstDotnet.csproj"
+            },
+            "C:\\Revature\\GoodwinJ\\wk1\\FizzBuzz\\FizzBuzz.csproj": {
+              "projectPath": "C:\\Revature\\GoodwinJ\\wk1\\FizzBuzz\\FizzBuzz.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
