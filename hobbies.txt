@@ -1,0 +1,2 @@
+This is a hobbies text file for exercise 2 in the git workbook. My hobbies include playing video games, watching movies, and playing fantasy football.
+I also do some occasional cooking and reading.
