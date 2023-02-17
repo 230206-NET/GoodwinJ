@@ -1,0 +1,15 @@
+C:\Revature\SoC\obj\Debug\net7.0\SoC.csproj.AssemblyReference.cache
+C:\Revature\SoC\obj\Debug\net7.0\SoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Revature\SoC\obj\Debug\net7.0\SoC.AssemblyInfoInputs.cache
+C:\Revature\SoC\obj\Debug\net7.0\SoC.AssemblyInfo.cs
+C:\Revature\SoC\obj\Debug\net7.0\SoC.csproj.CoreCompileInputs.cache
+C:\Revature\SoC\bin\Debug\net7.0\SoC.exe
+C:\Revature\SoC\bin\Debug\net7.0\SoC.deps.json
+C:\Revature\SoC\bin\Debug\net7.0\SoC.runtimeconfig.json
+C:\Revature\SoC\bin\Debug\net7.0\SoC.dll
+C:\Revature\SoC\bin\Debug\net7.0\SoC.pdb
+C:\Revature\SoC\obj\Debug\net7.0\SoC.dll
+C:\Revature\SoC\obj\Debug\net7.0\refint\SoC.dll
+C:\Revature\SoC\obj\Debug\net7.0\SoC.pdb
+C:\Revature\SoC\obj\Debug\net7.0\SoC.genruntimeconfig.cache
+C:\Revature\SoC\obj\Debug\net7.0\ref\SoC.dll
