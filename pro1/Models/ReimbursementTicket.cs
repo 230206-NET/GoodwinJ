@@ -4,6 +4,7 @@ namespace Models;
 
 public class ReimbursementTicket
 {
+    public int Id {get; set; }
     public string Name {get; set; }
     private string _title = "";
     public string Title { 

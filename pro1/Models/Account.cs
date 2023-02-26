@@ -1,10 +1,12 @@
 ﻿using Models.LengthException;
 using Models.RoleException;
+using Serilog;
 
 namespace Models;
 
 public class Account
 {
+    public int Id {get; set; }
     private string _userName = "";
     public string Username { 
         get
@@ -15,6 +17,7 @@ public class Account
         {
             if(value.Length >= 20)
             {
+                Log.Warning("Models: assigning name to new workout session: name length too long");
                 throw new
                 ArgumentLengthException("Username must be less than 20 characters");
             }

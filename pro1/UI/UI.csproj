@@ -3,6 +3,15 @@
   <ItemGroup>
     <ProjectReference Include="..\Models\Models.csproj" />
     <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+    <ProjectReference Include="..\Services\Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="serilog" Version="2.12.0" />
+    <PackageReference Include="serilog.settings.configuration" Version="3.4.0" />
+    <PackageReference Include="serilog.sinks.console" Version="4.1.0" />
+    <PackageReference Include="serilog.sinks.debug" Version="2.0.0" />
+    <PackageReference Include="serilog.sinks.file" Version="5.0.0" />
   </ItemGroup>
 
   <PropertyGroup>
