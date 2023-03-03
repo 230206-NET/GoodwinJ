@@ -2377,11 +2377,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Revature\\pro1\\Services\\Services.csproj",
+      "projectUniqueName": "C:\\Revature\\pro1.2\\pro1\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "C:\\Revature\\pro1\\Services\\Services.csproj",
+      "projectPath": "C:\\Revature\\pro1.2\\pro1\\Services\\Services.csproj",
       "packagesPath": "C:\\Users\\jacob\\.nuget\\packages\\",
-      "outputPath": "C:\\Revature\\pro1\\Services\\obj\\",
+      "outputPath": "C:\\Revature\\pro1.2\\pro1\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jacob\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2396,11 +2396,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Revature\\pro1\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Revature\\pro1\\DataAccess\\DataAccess.csproj"
+            "C:\\Revature\\pro1.2\\pro1\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Revature\\pro1.2\\pro1\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Revature\\pro1\\Models\\Models.csproj": {
-              "projectPath": "C:\\Revature\\pro1\\Models\\Models.csproj"
+            "C:\\Revature\\pro1.2\\pro1\\Models\\Models.csproj": {
+              "projectPath": "C:\\Revature\\pro1.2\\pro1\\Models\\Models.csproj"
             }
           }
         }

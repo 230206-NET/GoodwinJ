@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CdSzU8JklD2C+878nl6xgj1iaZrbSU9+fHVjuItY7nu9NBAMqkK4CtmsqqLBpOsMHu33B8u9WJHelEbDSilJqw==",
+  "dgSpecHash": "3oRxhvLw+dumiAIefDMIyRJ8C9CV6GF9637XDd/rS0UkYe70Q5VSEHXh4tX7J40+gIW+seuvyicLMFK/S7OCrg==",
   "success": true,
-  "projectFilePath": "C:\\Revature\\pro1\\UI\\UI.csproj",
+  "projectFilePath": "C:\\Revature\\pro1.1\\pro1\\UI\\UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jacob\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\jacob\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

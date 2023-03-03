@@ -1,4 +1,5 @@
 using Models.LengthException;
+using Models.IntegerException;
 
 namespace Models;
 
@@ -25,6 +26,27 @@ public class ReimbursementTicket
             _title = value;
         }
     }
+    private string _amount = "";
+    public string Amount {
+        get
+        {
+            return _amount;
+        } 
+        set
+        {
+            int i = 0;
+            if(string.IsNullOrWhiteSpace(value))
+            {
+                throw new ArgumentNullException("Amount cannot be empty");
+            }
+            bool isNumber = int.TryParse(value, out i);
+            if(!isNumber)
+            {
+                throw new ArgumentIntegerException("Amount must be integer");
+            }
+            _amount = value;
+        }
+    } 
     private string _description = "";
     public string Description {
         get

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l3newqTVpy6dKVAzwe4Ic4YS23R+vdHHS9qi4PiQhCrIAkCzgWtZ2DMKZbEbM4GaeyXjF5AsgbYQ4KkBStg6YA==",
+  "dgSpecHash": "egdYtpuCvaRXPYfkE5v81w9hli0oItr8AYqTAqOsFq3c04Qpua1YHCFqUloVBwOYFz+9pUUtgl2q2WncjAgsiQ==",
   "success": true,
-  "projectFilePath": "C:\\Revature\\pro1\\Services\\Services.csproj",
+  "projectFilePath": "C:\\Revature\\pro1.2\\pro1\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jacob\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\jacob\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

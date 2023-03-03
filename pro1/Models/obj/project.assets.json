@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Revature\\pro1\\Models\\Models.csproj",
+      "projectUniqueName": "C:\\Revature\\pro1.2\\pro1\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "C:\\Revature\\pro1\\Models\\Models.csproj",
+      "projectPath": "C:\\Revature\\pro1.2\\pro1\\Models\\Models.csproj",
       "packagesPath": "C:\\Users\\jacob\\.nuget\\packages\\",
-      "outputPath": "C:\\Revature\\pro1\\Models\\obj\\",
+      "outputPath": "C:\\Revature\\pro1.2\\pro1\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jacob\\AppData\\Roaming\\NuGet\\NuGet.Config"

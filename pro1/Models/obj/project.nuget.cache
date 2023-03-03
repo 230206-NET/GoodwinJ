@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "elc82Ly9RdO4QdEoSimVOSesGQ4TuHjOmwEmblOWHL/X1jjgZVQZshjTYzHPUJZLqOZZ3S1zYLZIJTloY+c9zQ==",
+  "dgSpecHash": "N/77u3V+5K7pVMqVA+NLG4GNvtqd1XOsNqugtzSfvMaxnLtR0++2wuxW0TxB33RC9LtQ7NTlsNIgaZCsBGjofQ==",
   "success": true,
-  "projectFilePath": "C:\\Revature\\pro1\\Models\\Models.csproj",
+  "projectFilePath": "C:\\Revature\\pro1.2\\pro1\\Models\\Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jacob\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512"
   ],

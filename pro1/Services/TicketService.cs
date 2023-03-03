@@ -16,13 +16,21 @@ public class TicketService
     }
 
     public void CreateNewTicketLog(ReimbursementTicket ticketToCreate) {
-        // try
-        // {
             _repo.CreateNewTicketLog(ticketToCreate);
-        // }
-        // catch (SqlException)
-        // {
-        //     throw;
-        // }
+    }
+
+    public void UpdateTicketLog(ReimbursementTicket ticketToUpdate) {
+        _repo.UpdateTicketLog(ticketToUpdate);
+    }
+
+    public List<ReimbursementTicket> FindTickets(string username) {
+        List<ReimbursementTicket> allTickets = GetAllTickets();
+        List<ReimbursementTicket> equal = new();
+        foreach(ReimbursementTicket tkt in allTickets) {
+            if(tkt.Name == username){
+                equal.Add(tkt);
+            }
+        }
+        return equal;
     }
 }

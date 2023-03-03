@@ -8,23 +8,17 @@ namespace UI;
 
 public class MainMenu
 {
+    
     private AccountService _service;
     private TicketService _service1;
-    private AnalyzedTicketService _service2;
-    public MainMenu(AccountService service, TicketService service1, AnalyzedTicketService service2) {
+    // private AnalyzedTicketService _service2;
+    public MainMenu(AccountService service, TicketService service1) {
         _service = service;
         _service1 = service1;
-        _service2 = service2;
     }
-
-    // public void MainMenu1(TicketService service1) {
-    //     _service1 = service1;
-    // }
     List<Account> accounts = new();
     string userInput = "";
     public void Start() {
-        // AccountList accounts = new AccountList();
-        // List<Account> accounts = new();
         while(true){
             Console.WriteLine("Expense Reimbursement System");
             Console.WriteLine("What do you want to do?");
@@ -35,37 +29,6 @@ public class MainMenu
             switch(input)
             {
                 case "1":
-                    // Console.WriteLine("Logging in: ");
-                    // string choice = "";
-                    // while(true) {
-                    //     Console.WriteLine("Enter [1] if your role is employee and [2] if your role is manager");
-                    //     choice = Console.ReadLine();
-                    //     if (choice != "1" && choice != "2")
-                    //     {
-                    //         Console.WriteLine("Input must be '1' or '2'");
-                    //     }else if(choice == "1")
-                    //     {
-                    //         choice = "Employee";
-                    //         break;
-                    //     } else
-                    //     {
-                    //         choice = "Manager";
-                    //         break;
-                    //     }
-                    // }
-                    // Console.WriteLine("Username: ");
-                    // string? nameInput = Console.ReadLine();
-                    // Console.WriteLine("Password: ");
-                    // string? passwordInput = Console.ReadLine();
-                    // List<Account> log = new FileStorage().GetAllAccounts();
-                    // foreach(Account ac in log)
-                    // {
-                    //     if(nameInput == ac.Username && passwordInput == ac.Password && choice == ac.Role){
-                    //         Console.WriteLine("logged in");
-                    //         break;
-                    //     }                  
-                    // }
-                    // Console.WriteLine("No account found");
                     LogInProcess();
 
                 break;
@@ -79,9 +42,6 @@ public class MainMenu
                     {
                         Console.WriteLine(ac);
                     }
-                    // foreach(Account ac in accounts) {
-                    //     Console.WriteLine(ac);
-                    // }
 
                 break;
                 case "x":
@@ -98,7 +58,7 @@ public class MainMenu
 
     private void CreateNewAccount() {
         bool skip;
-        Account user = new Account();
+        Account? user = new Account();
         Console.WriteLine("Creating new account: ");
         while(true){
             Console.WriteLine("Enter [1] to create an employee account or [2] to create a manager account");
@@ -164,20 +124,13 @@ public class MainMenu
         Console.WriteLine("Username: {0}", user.Username);
         Console.WriteLine("Password: {0}", user.Password);
 
-        // accounts.Add(user);
-        // try
-        // {
-            _service.CreateNewLog(user);
-        // }
-        // catch (SqlException)
-        // {
-        //     Console.WriteLine("Something went wrong with db, please try again");
-        // }
+        _service.CreateNewLog(user);
+        
     }
 
     private void LogInProcess() {
         Console.WriteLine("Logging in: ");
-        string choice = "";
+        string? choice = "";
         while(true) {
             Console.WriteLine("Enter [1] if your role is employee and [2] if your role is manager");
             choice = Console.ReadLine();
@@ -238,7 +191,7 @@ public class MainMenu
             break;
             case "x":
                 return;
-            break;
+
             default:
                 Console.WriteLine("I Don't understand your input");
             break;
@@ -318,7 +271,7 @@ public class MainMenu
             break;
             case "x":
                 return;
-            break;
+
             default:
                 Console.WriteLine("I Don't understand your input");
             break;
@@ -327,35 +280,12 @@ public class MainMenu
     }
     private void ticketDecision() {
         List<ReimbursementTicket> ticketlog = _service1.GetAllTickets();
-        List<ReimbursementTicket> analyzedticketlog = _service2.GetAllAnalyzedTickets();
         bool skip = false;
-        string stat = "";
         foreach(ReimbursementTicket rt in ticketlog)
         {
             skip = false;
-            foreach(ReimbursementTicket art in analyzedticketlog){
-                if(rt.Name == art.Name && rt.Title == art.Title && rt.Description == art.Description) {
-                    skip = true;
-                    // Console.WriteLine("Username: " + rt.Name);
-                    // Console.WriteLine("Title: " + rt.Title);
-                    // Console.WriteLine("Description: " + rt.Description);
-                    // Console.WriteLine("Enter [1] to approve or [2] to reject");
-                    // string select = Console.ReadLine();
-                    // if (select != "1" && select != "2")
-                    // {
-                    //     Console.WriteLine("Input must be '1' or '2'");
-                    // }else if(select == "1")
-                    // {
-                    //     rt.Status = "Approved";
-                    //     Console.WriteLine("Ticket approved");
-                    //     break;
-                    // } else
-                    // {
-                    //     rt.Status = "Rejected";
-                    //     Console.WriteLine("Ticket rejected");
-                    //     break;
-                    // }
-                }
+            if(rt.Status != "Pending"){
+                skip = true;
             }
             if(!skip) {
                 Console.WriteLine("Username: " + rt.Name);
@@ -363,55 +293,35 @@ public class MainMenu
                 Console.WriteLine("Description: " + rt.Description);
                 while(true) {
                     Console.WriteLine("Enter [1] to approve or [2] to reject");
-                    string select = Console.ReadLine();
+                    string? select = Console.ReadLine();
                     if (select != "1" && select != "2")
                     {
                         Console.WriteLine("Input must be '1' or '2'");
                     }else if(select == "1")
                     {
-                        stat = "Approved";
+                        rt.Status = "Approved";
                         Console.WriteLine("Ticket approved");
                         break;
                     } else
                     {
-                        stat = "Rejected";
+                        rt.Status = "Rejected";
                         Console.WriteLine("Ticket rejected");
                         break;
                     }
                 }
-                ReimbursementTicket analyzedticket = new ReimbursementTicket();
-                analyzedticket.Name = rt.Name;
-                analyzedticket.Title = rt.Title;
-                analyzedticket.Description = rt.Description;
-                analyzedticket.Status = stat;
-                _service2.CreateNewAnalyzedTicketLog(analyzedticket);
+                _service1.UpdateTicketLog(rt);
             }       
         }
     }
     private void ViewTickets() {
-        bool skip;
         List<ReimbursementTicket> ticketlog = _service1.GetAllTickets();
-        List<ReimbursementTicket> analyzedticketlog = _service2.GetAllAnalyzedTickets();
-        foreach(ReimbursementTicket art in analyzedticketlog){
-                if(userInput == art.Name){
-                    Console.WriteLine(art.Title);
-                    Console.WriteLine(art.Description);
-                    Console.WriteLine(art.Status);                    
-                }
-        }
         foreach(ReimbursementTicket rt in ticketlog)
         {
-            skip = false;
-            foreach(ReimbursementTicket art in analyzedticketlog){
-                if(rt.Title == art.Title && rt.Description == art.Description && rt.Name == rt.Name){
-                    skip = true;
-                }
-            }
-            if(!skip) {
-                    Console.WriteLine(rt.Title);
-                    Console.WriteLine(rt.Description);
-                    Console.WriteLine(rt.Status);
-                }
+                 if(userInput == rt.Name) {
+                        Console.WriteLine(rt.Title);
+                        Console.WriteLine(rt.Description);
+                        Console.WriteLine(rt.Status);
+                     }
         }
 
     }

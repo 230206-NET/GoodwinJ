@@ -16,13 +16,18 @@ public class AccountService
     }
 
     public void CreateNewLog(Account accountToCreate) {
-        // try
-        // {
             _repo.CreateNewLog(accountToCreate);
-        // }
-        // catch (SqlException)
-        // {
-        //     throw;
-        // }
+    }
+
+    public List<Account> Login(string username, string password, string role) {
+        List<Account> allAccounts = GetAllAccounts();
+        List<Account> match = new();
+        foreach(Account ac in allAccounts) {
+            if(ac.Username == username&&ac.Password == password&&ac.Role == role){
+                match.Add(ac);
+                break;
+            }
+        }
+        return match;
     }
 }
